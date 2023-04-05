@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appointment</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-d fixed-top bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="" class="img-fluid"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+          </div>
+      </div>
+  </nav>
+<br>
+<br>
+<br>
+<br>
+  <div class="container">
+    <div class="p-1 bg-light">
+      <form class="row g-2">
+        <h5>
+          <p class="text-center">ข้อมูลผู้นัดหมาย</p>
+        </h5><hr>
+        <div class="col-md-3">
+          <label class="col-sm-10 text-center">ชื่อ</label>
+          <input type="text" maxlength="20" class="form-control" id="name" placeholder="ชื่อ" required>
+        </div>
+        
+        <div class="col-md-3">
+          <label class="col-sm-10 text-center">นามสกุล</label>
+          <input type="text" maxlength="20" class="form-control" id="sur" placeholder="นามสกุล"required>
+        </div>
+        <div class="col-md-3">
+          <label  class="col-sm-10 text-center">เบอร์โทรศัพท์</label>
+          <input type="text" class="form-control" id="phone" placeholder="เบอร์โทรศัพท์"required >
+        </div>
+        <div class="col-md-3">
+          <label class="col-sm-10 text-center">อีเมล</label>
+          <input type="email" class="form-control" id="email" placeholder="อีเมล"required>
+        </div>
+        <div class="col-md-3">
+          <label class="col-sm-10 text-center">วัน/เดือน/ปีเกิด</label>
+          <input type="date" class="col-sm-10" id="birthday" name="birthday"required>
+        </div>
+        <div class="form-group col-md-3">
+          <label class="col-sm-10 text-center">สัญชาติ *</label>
+          <select name="Nationality" id="Nationality" class="form-control" required>
+            <option>--- กรุณาเลือก ---</option>
+            <option value="AF">Afghani</option>
+            <option value="US">American</option>
+            <option value="AD">Andorian</option>
+            <option value="AO">Angolian</option>
+            <option value="AI">Anguillan</option>
+            <option value="AQ">Antarctic</option>
+            <option value="AR">Argentine</option>
+            <option value="AM">Armenian</option>
+            <option value="AW">Arubian</option>
+            <option value="AU">Australian</option>
+            <option value="AS">Austrian</option>
+            <option value="BS">Bahameese</option>
+            <option value="BH">Bahrainian</option>
+            <option value="BA">Bangladeshi</option>
+            <option value="BB">Barbadian</option>
+            <option value="BY">Belarusian</option>
+            <option value="BE">Belgian</option>
+            <option value="BZ">Belizean</option>
+            <option value="BM">Bermuda</option>
+            <option value="BT">Bhutanese</option>
+            <option value="BO">Bolivian</option>
+            <option value="BR">Brazilian</option>
+            <option value="GB">British</option>
+            <option value="BN">Brunei</option>
+            <option value="BU">Bulgarian</option>
+            <option value="MM">Burmese</option>
+            <option value="CM">Cambodian</option>
+            <option value="CM">Cameroonian</option>
+            <option value="CA">Canadian</option>
+            <option value="TD">Chadian</option>
+            <option value="CL">Chilean</option>
+            <option value="HK">Chinese</option>
+            <option value="CH">Chinese</option>
+            <option value="CO">Columbian</option>
+            <option value="CG">Congolese</option>
+            <option value="CR">Costa Rican</option>
+            <option value="HR">Croatian</option>
+            <option value="CU">Cuban</option>
+            <option value="CY">Cypriot</option>
+            <option value="CR">Czech</option>
+            <option value="DK">Danish</option>
+            <option value="DM">Dominican</option>
+            <option value="NL">Dutch</option>
+            <option value="EC">Ecuadorean</option>
+            <option value="EG">Egyptian</option>
+            <option value="AE">Emirati</option>
+            <option value="EE">Estonian</option>
+            <option value="ET">Ethiopian</option>
+            <option value="FJ">Fijian</option>
+            <option value="PH">Filipino</option>
+            <option value="FI">Finnish</option>
+            <option value="FR">French</option>
+            <option value="GE">Georgian</option>
+            <option value="DE">German</option>
+            <option value="GH">Ghanaian</option>
+            <option value="GR">Greek</option>
+            <option value="GN">Guinean</option>
+            <option value="GY">Guyanese</option>
+            <option value="HU">Hungarian</option>
+            <option value="IS">Icelander</option>
+            <option value="IN">Indian</option>
+            <option value="ID">Indonesian</option>
+            <option value="IR">Iranian</option>
+            <option value="IQ">Iraqi</option>
+            <option value="IE">Irish</option>
+            <option value="IS">Israeli</option>
+            <option value="IT">Italian</option>
+            <option value="JM">Jamaican</option>
+            <option value="JP">Japanese</option>
+            <option value="JO">Jordanian</option>
+            <option value="KZ">Kazakhstani</option>
+            <option value="KZ">Kazakhstani</option>
+            <option value="KE">Kenyan</option>
+            <option value="KO">Korean</option>
+            <option value="KW">Kuwaiti</option>
+            <option value="LA">Laotian</option>
+            <option value="LB">Lebanese</option>
+            <option value="LT">Lithunian</option>
+            <option value="LU">Luxembourger</option>
+            <option value="MO">Macau</option>
+            <option value="MY">Malaysian</option>
+            <option value="MV">Maldivan</option>
+            <option value="MU">Mauritian</option>
+            <option value="ME">Mexican</option>
+            <option value="MC">Monacan</option>
+            <option value="MN">Mongolian</option>
+            <option value="Montenegro">Montenegrin</option>
+            <option value="MA">Moroccan</option>
+            <option value="NA">Namibian</option>
+            <option value="NP">Nepalese</option>
+            <option value="NZ">New Zealander</option>
+            <option value="NG">Nigerian</option>
+            <option value="NO">Norwegian</option>
+            <option value="OM">Omani</option>
+            <option value="PK">Pakistani</option>
+            <option value="PA">Panamanian</option>
+            <option value="PY">Paraguayan</option>
+            <option value="PE">Peruvian</option>
+            <option value="PO">Polish</option>
+            <option value="PT">Portugees</option>
+            <option value="QA">Qatari</option>
+            <option value="RO">Romanian</option>
+            <option value="RU">Russian</option>
+            <option value="SA">Saudi Arabian</option>
+            <option value="SN">Senegalese</option>
+            <option value="Serbia">Serbian</option>
+            <option value="SC">Seychellois</option>
+            <option value="SG">Singaporean</option>
+            <option value="SK">Slovakian</option>
+            <option value="SO">Somali</option>
+            <option value="ZA">South African</option>
+            <option value="SP">Spanish</option>
+            <option value="LK">Sri Lankan</option>
+            <option value="SD">Sudanese</option>
+            <option value="SE">Swedish</option>
+            <option value="CH">Swiss</option>
+            <option value="TW">Taiwanese</option>
+            <option value="TZ">Tanzanian</option>
+            <option value="TH">Thai</option>
+            <option value="TN">Tunisian</option>
+            <option value="TR">Turkish</option>
+            <option value="UG">Ugandan</option>
+            <option value="UA">Ukrainian</option>
+            <option value="UY">Uruguayan</option>
+            <option value="UZ">Uzbekistani</option>
+            <option value="VE">Venezuelan</option>
+            <option value="VN">Vietnamese</option>
+            <option value="YE">Yemeni</option>
+            <option value="ZM">Zambian</option>
+            <option value="ZW">Zimbabwean</option>
+          </select>
+        </div>
+        <div class="col-md-5">
+          <label class="col-sm-10 text-center">ที่อยู่ที่ติดต่อได้</label>
+          <input type="text" class="form-control" id="address" placeholder="ที่อยู่ที่ติดต่อได้"required>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="container">
+    <div class="p-3 bg-light">
+      <form class="row g-2">
+        <h5>
+          <p class="text-center">รายละเอียดการนัดหมาย</p>
+        </h5><hr>
+        <!-- เลือกโรงพยาบาล -->
+        <div class="col-md-3">
+          <label class="col-sm-10 text-center">โรงพยาบาล</label>
+          <div class="form-group">
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>---กรุณาเลือก---</option>
+              <option>โรงพยาบาลยันฮี</option>
+              <option>โรงพยาบาลบํารุงราษฎร์</option>
+              <option>โรงพยาบาลวิชัยยุทธ 1</option>
+              <option>โรงพยาบาลวิชัยยุทธ 2</option>
+              <option>โรงพยาบาลวิภาวดี 1</option>
+              <option>โรงพยาบาลบีแคร์ เมดิคอลเซ็นเตอร์</option>
+              <option>โรงพยาบาลกรุงเทพคริสเตียน</option>
+              <option>โรงพยาบาลกรุงเทพ</option>
+              <option>โรงพยาบาลวัฒโนสถ</option>
+              <option>โรงพยาบาลบางมด </option>
+              <option>โรงพยาบาล บางปะกอก 1</option>
+              <option>โรงพยาบาล บางปะกอก-รังสิต 2</option>
+              <option>โรงพยาบาลบางโพ</option>
+              <option>โรงพยาบาลบ้านแพ้ว</option>
+              <option>โรงพยาบาลบีเอ็นเอช</option>
+              <option>โรงพยาบาลซีจีเอช</option>
+              <option>โรงพยาบาลเจ้าพระยา</option>
+              <option>โรงพยาบาลคลองตัน</option>
+              <option>โรงพยาบาลกรุงธน 1</option>
+              <option>โรงพยาบาลนครธน</option>
+              <option>โรงพยาบาลพญาไท 1</option>
+              <option>โรงพยาบาลพญาไท 2</option>
+              <option>โรงพยาบาลพญาไท 3</option>
+              <option>โรงพยาบาลเพชรเกษม-บางแค</option>
+              <option>โรงพยาบาลพระราม 9</option>
+              <option>โรงพยาบาลรามคำแหง</option>
+              <option>โรงพยาบาลจักษุรัตนิน</option>
+              <option>โรงพยาบาลสมิติเวช</option>
+              <option>โรงพยาบาลสมิติเวชศรีนครินทร์</option>
+              <option>โรงพยาบาลเด็กสมิติเวช ศรีนครินทร์</option>
+              <option>โรงพยาบาลสมิติเวชสุขุมวิท</option>
+              <option>โรงพยาบาลสมิติเวชศรีราชา</option>
+              <option>โรงพยาบาลสมิติเวชธนบุรี</option>
+              <option>โรงพยาบาลเปาโล เมโมเรียล พหลโยธิน</option>
+              <option>โรงพยาบาลเปาโล เมโมเรียล นวมินทร์</option>
+              <option>โรงพยาบาลศรีวิชัย 1</option>
+              <option>โรงพยาบาลวิชัยเวช อินเตอร์เนชั่นแนล หนองแขม</option>
+              <option>โรงพยาบาลเซนต์หลุยส์</option>
+              <option>โรงพยาบาลสุขุมวิท</option>
+              <option>โรงพยาบาลสินแพทย์</option>
+              <option>โรงพยาบาลไทยนครินทร์</option>
+              <option>โรงพยาบาลเทพธารินทร์</option>
+              <option>โรงพยาบาลธนบุรี 1</option>
+              <option>โรงพยาบาลธนบุรี 2</option>
+              <option>โรงพยาบาลเวชธานี</option>
+              <option>โรงพยาบาล ตาหู จมูก</option>
+              <option>โรงพยาบาลกรุณาพิทักษ์</option>
+              <option>โรงพยาบาลบางกอกเนอสซิ่งโฮม</option>
+              <option>โรงพยาบาลยศเส</option>
+              <option>โรงพยาบาลเยาวรักษ์</option>
+              <option>รงพยาบาลศูนย์มะเร็งกรุงเทพฯ</option>
+              <option>โรงพยาบาลมนารมย์</option>
+              <option>โรงพยาบาลลาดกระบัง เมโมเรียล</option>
+              <option>โรงพยาบาลภิรมย์เภสัช</option>
+              <option>โรงพยาบาลปิยะเวท</option>
+              <option>โรงพยาบาลเสรีรักษ์</option>
+              <option>โรงพยาบาลเสนาเวชการ</option>
+              <option>โรงพยาบาลอังคทะวาณิช</option>
+              <option>โรงพยาบาลจงจินต์มูลนิธิ</option>
+              <option>โรงพยาบาลซังฮี้</option>
+              <option>โรงพยาบาล ผิวหนัง อโศก</option>
+              <option>โรงพยาบาลวิชัยเวช อินเตอร์เนชั่นแนล</option>
+              <option>โรงพยาบาลกมล ศัลยกรรมตกแต่งและแปลงเพศ</option>
+              <option>โรงพยาบาลจักษุ รัตนิน</option>
+              <option>โรงพยาบาลสถาบันโรคไตภูมิราชนครินทร์</option>
+              <option>โรงพยาบาลเบทเทอร์บีอิ้ง</option>
+              <option>โรงพยาบาลกรุงเทพไชน่าทาวน์</option>
+              <option>โรงพยาบาลเกษมราษฏร์รัตนาธิเบศร์</option>
+              <option>โรงพยาบาลฮัมซะฮฺ</option>
+              <option>โรงพยาบาลชีวา ทรานสิชั่นนัล แคร์</option>
+              <option>โรงพยาบาลเอส สไปน์ แอนด์ เนิร์ฟ</option>
+              <option>โรงพยาบาลผู้สูงอายุกล้วยน้ำไท 2</option>
+              <option>โรงพยาบาลคามิลเลียน</option>
+              <option>โรงพยาบาลบางปะกอก 9 อินเตอร์เนชั่นแนล</option>
+              <option>โรงพยาบาลเกษมราษฎร์ รามคำแหง</option>
+              <option>โรงพยาบาลบางขุนเทียน</option>
+              <option>โรงพยาบาลไทยจักษุ พระราม 3</option>
+              <option>โรงพยาบาลธนบุรี บำรุงเมือง</option>
+              <option>โรงพยาบาลบาโนบากิ</option>
+              <option>โรงพยาบาลวิมุต</option>
+              <option>โรงพยาบาลมาสเตอร์พีช</option>
+              <option>โรงพยาบาลจุฬาลงกรณ์</option>
+              <option>โรงพยาบาลตำรวจ</option>
+              <option>โรงพยาบาลนพรัตนราชธานี</option>
+              <option>โรงพยาบาลพระมงกุฎเกล้า</option>
+              <option>โรงพยาบาลภูมิพลอดุลยเดช</option>
+              <option>โรงพยาบาลราชวิถี</option>
+              <option>โรงพยาบาลรามาธิบดี</option>
+              <option>โรงพยาบาลเลิดสิน</option>
+              <option>โรงพยาบาลศิริราช</option>
+              <option>โรงพยาบาลสมเด็จพระปิ่นเกล้า</option>
+              <option>โรงพยาบาลเทียนฟ้า มูลนิธิ</option>
+              <option>โรงพยาบาลกล้วยน้ำไท</option>
+              <option>โรงพยาบาลเกษมราษฏร์บางแค</option>
+              <option>โรงพยาบาลเกษมราษฏร์ประชาชื่น</option>
+              <option>โรงพยาบาลการุญเวช สุขาภิบาล 3</option>
+              <option>โรงพยาบาลนวมินทร์</option>
+              <option>โรงพยาบาลนวมินทร์ 9</option>
+              <option>โรงพยาบาลบางนา 1</option>
+              <option>โรงพยาบาลบางประกอก 8</option>
+              <option>โรงพยาบาลบางไผ่</option>
+              <option>โรงพยาบาลบางมด</option>
+              <option>โรงพยาบาลบี.แคร์ เมดิคอลเซ็นเตอร์</option>
+              <option>โรงพยาบาลประชาพัฒน์</option>
+              <option>โรงพยาบาลเปาโล โชคชัย 4</option>
+              <option>โรงพยาบาลเปาโล เกษตร</option>
+              <option>โรงพยาบาลพีเอ็มจี</option>
+              <option>โรงพยาบาลเพชรเกษม 2</option>
+              <option>โรงพยาบาลเพชรเวช</option>
+              <option>โรงพยาบาลแพทย์ปัญญา</option>
+              <option>โรงพยาบาลมเหสักข์</option>
+              <option>โรงพยาบาลมงกุฎวัฒนะ</option>
+              <option>โรงพยาบาลมิชชั่น</option>
+              <option>โรงพยาบาลราษฎร์บูรณะ</option>
+              <option>โรงพยาบาลลาดพร้าว</option>
+              <option>โรงพยาบาลวิภาราม</option>
+              <option>โรงพยาบาลศิครินทร์</option>
+              <option>โรงพยาบาลซีจีเอช สายไหม</option>
+              <option>โรงพยาบาลสุขสวัสดิ์</option>
+              <option>โรงพยาบาลหัวเฉียว</option>
+              <option>คณะแพทยศาสตร์วชิรพยาบาล มหาวิทยาลัยนวมินทราธิราช</option>
+              <option>โรงพยาบาลกลาง</option>
+              <option>โรงพยาบาลเจริญกรุงประชารักษ์</option>
+              <option>โรงพยาบาลตากสิน</option>
+              <option>โรงพยาบาลราชพิพัฒน์</option>
+              <option>โรงพยาบาลเวชการุณย์รัศมิ์</option>
+              <option>โรงพยาบาลสิรินธร </option>
+              <option>โรงพยาบาลหลวงพ่อทวีศักดิ์ ชุตินุธโร อุทิศ</option>
+              <option>โรงพยาบาลลาดกระบังกรุงเทพมหานคร</option>
+              <option>โรงพยาบาลผู้สูงอายุบางขุนเทียน</option>
+              
+            </select>
+          </div>
+        </div>
+        <!-- วันที่นัดหมาย -->
+        <div class="col-md-3">
+          <label class="col-sm-10 text-center">วันที่นัดหมาย</label>
+          <input type="date" id="dateapp" class="col-sm-10" name="dateapp"required>
+        </div>
+        <!-- เลือกเวลานัดหมาย ใช้ from-control -->
+        <div class="col-md-3">
+          <label class="col-sm-10 text-center">เลือกเวลานัดหมาย</label>
+          <div class="form-group">
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>Anytime</option>
+              <option>07:00-07:59</option>
+              <option>08:00-08:59</option>
+              <option>09:00-09:59</option>
+              <option>10:00-10:59</option>
+              <option>11:00-11:59</option>
+              <option>12:00-12:59</option>
+              <option>13:00-13:59</option>
+              <option>14:00-14:59</option>
+              <option>15:00-15:59</option>
+              <option>16:00-16:59</option>
+              <option>17:00-17:59</option>
+            </select>
+          </div>
+        </div>
+        <!-- รายละเอียดอาการป่วย -->
+        <div class="col-md-3">
+          <label class="col-sm-10 text-center">รายละเอียดอาการป่วย</label>
+          <input type="text" class="form-control" id="detailsill" placeholder="รายละเอียดอาการป่วย">
+        </div>
+        <!-- วันที่นัดหมายสำรอง -->
+        <div class="col-md-3">
+          <label class="col-sm-10 text-center">วันที่นัดหมายสำรอง</label>
+          <input type="date" class="col-sm-10" id="dateresurv" name="dateresurv"required>
+          <!-- เวลานัดหมายสำรอง from-control-->
+        </div>
+        <div class="col-md-3">
+          <label class="col-sm-10 text-center">เลือกเวลานัดหมายสำรอง</label>
+          <div class="form-group">
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>Anytime</option>
+              <option>07:00-07:59</option>
+              <option>08:00-08:59</option>
+              <option>09:00-09:59</option>
+              <option>10:00-10:59</option>
+              <option>11:00-11:59</option>
+              <option>12:00-12:59</option>
+              <option>13:00-13:59</option>
+              <option>14:00-14:59</option>
+              <option>15:00-15:59</option>
+              <option>16:00-16:59</option>
+              <option>17:00-17:59</option>
+            </select>
+          </div>
+        </div>
+        <!-- รายละเอียดเพิ่มเติมใช้ textarea  -->
+        <div class="form-group">
+          <label >รายละเอียดเพิ่มเติม *</label>
+          <textarea name="ConcernRequest" id="ConcernRequest" class="form-control" required
+            maxlength="1200"></textarea>
+        </div>
+      </form>
+    </div>
+  </div>
+<!-- Button -->
+  <div class="col-12 text-center ">
+    <button type="button" class="btn btn-outline-success btn-lg" onclick="history.back()">กลับ</button>
+    <button type="button" class="btn btn-success btn-lg" id="btnNextStep">นัดหมาย</button>
+  </div>
+  
+
+
+
+</body>
+
+
+
+</html>
